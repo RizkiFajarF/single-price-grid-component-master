@@ -1,0 +1,157 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  height:100vh;
+  background-color:hsl(204, 43%, 93%);
+  font-size:16px;
+  color:hsl(218, 22%, 67%);
+  font-family: 'Karla', sans-serif;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+  padding-top:470px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  width:650px;
+  display:flex;
+  flex-wrap: wrap;
+  /*ini buat ketengah */
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  /*batas bawah*/
+  /*
+  margin:0 auto 20px auto;
+  */
+  box-shadow: 10px 5px 20px 3px rgba(0,0,0,0.5);
+  ;
+}
+
+.white {
+  padding:30px 40px 40px 30px;
+  background-color:white;
+  width:100%;
+  text-align: justify;
+}
+
+.green {
+  width:50%;
+  color:white;
+  padding:30px 40px 20px 30px;
+}
+
+.white h3 {
+  color:hsl(71, 73%, 54%);
+  line-height: 3rem;
+}
+
+.white h1 {
+  color:hsl(179, 62%, 43%);
+
+}
+
+.green h3 {
+  font-weight: 400;
+  margin-bottom:20px;
+  text-align: left;
+}
+
+.bottom1 {
+  background-color:rgb(43,179,177);
+  text-align: center;
+}
+.bottom2 {
+  background-color:rgb(74,190,189);
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.3rem;
+  padding-bottom:10px;
+  color:rgb(150,227,233);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.month {
+  position: absolute;
+  top:50%;
+  left: 110px;
+  transform: translate(-50%,-50%);
+  color:rgb(150,227,233);
+}
+
+.bottom1 p {
+  position: relative;
+  margin-bottom:10px;
+  text-align: left;
+}
+
+.button {
+  padding:15px 90px;
+  background-color:hsl(71, 73%, 54%);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  margin:20px auto 0 auto;
+  color:white;
+}
+
+.button:hover {
+  background-color:hsl(71, 73%, 54%);
+  opacity: 0.8;
+}
+
+@media (max-width: 680px)  {
+  main {
+    width:348px;
+    position: static;
+    transform: none;
+    margin:20px auto 20px auto;
+  }
+  .green {
+    width:100%;
+  }
+
+  .white {
+    font-size:13px;
+  }
+
+  .white h3 {
+    padding-top:10px;
+    padding-bottom:10px;
+    line-height:normal;
+  }
+
+  .white p {
+    line-height: 1.5rem;
+  }
+
+  .attribution {
+    position: static;
+    transform: none;
+    padding-top:0px; 
+  }
+
+
+}
